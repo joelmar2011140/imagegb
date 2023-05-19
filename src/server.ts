@@ -1,5 +1,8 @@
 import { createServer } from 'http'
+import dotenv from 'dotenv'
 import app from './app'
+
+dotenv.config()
 
 function startServer (): void {
   const servidor = createServer(app)
